@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 
 const WhoWeHelp = () => {
-    const [showText1, setShowText1] = useState(false);
+    const [showText1, setShowText1] = useState(true);
     const [showText2, setShowText2] = useState(false);
     const [showText3, setShowText3] = useState(false);
-    
-    var element = document.getElementById("first");
 
-    const onClick1 = () => {setShowText1(true); setShowText2(false); setShowText3(false); element.style.width="0px"; element.style.height="0px"; element.style.color="white"}
+
+    const onClick1 = () => {setShowText1(true); setShowText2(false); setShowText3(false);}
     const onClick2 = () => {setShowText1(false); setShowText2(true); setShowText3(false);}
     const onClick3 = () => {setShowText1(false); setShowText2(false); setShowText3(true);}
 
@@ -24,7 +23,6 @@ const WhoWeHelp = () => {
             </div>
         </section>
         <div>
-            <div id="first"><Div1/></div>
             {showText1 ? <Div1 /> :null}
             {showText2 ? <Div2 /> :null}
             {showText3 ? <Div3 /> :null}
