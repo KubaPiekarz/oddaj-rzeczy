@@ -1,0 +1,33 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.login-div, .menu{
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 20px;
+    gap: 30px;
+    font-size: 18px;
+
+}
+
+
+.menu-option{
+    padding: 3px 7px;
+    border: 1.5px solid transparent;
+}
+
+
+.menu-option:hover{
+    border: 1.5px solid $black-color;
+}
+
+.login{
+    text-decoration: none;
+    color: $black-color;
+    border: 1.5px solid transparent;
+    padding: 3px 7px;
+}
+
+.login:hover{
+    border: 1.5px solid $yellow-color;
+}

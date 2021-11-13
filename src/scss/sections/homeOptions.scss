@@ -1,0 +1,19 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.home-menu{
+    background-image: url(../../assets/Home-Hero-Image.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+    background-position-x: -50%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#home-button-right{
+    font-size: 30px;
+}

@@ -1,0 +1,9 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.four-steps-section{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}

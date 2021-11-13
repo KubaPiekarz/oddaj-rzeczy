@@ -1,0 +1,14 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+#about-us-section{
+    display: flex;
+}
+
+.about-us-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 30px;
+}

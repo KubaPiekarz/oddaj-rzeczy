@@ -1,0 +1,14 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+#who-we-help-section{
+    display:flex;
+    justify-content: center;
+}
+
+.message{
+    background-color: $green-color;
+    color: $white-color;
+    padding: 20px;
+    width: 30vw;
+}
