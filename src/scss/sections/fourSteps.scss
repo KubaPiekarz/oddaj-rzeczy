@@ -7,3 +7,38 @@
     justify-content: center;
     flex-direction: column;
 }
+
+.four-steps-text{
+    background-color: $background-gray;
+}
+
+.four-steps-column{
+    padding: 50px 0;
+}
+
+.p-border{
+    border-bottom: 1px solid $font-color; 
+    padding-bottom: 20px;
+}
+
+#button-four-steps{
+    width: 200px;
+    height: 80px;
+    border-radius: 0%;
+    border: 1.5px solid $font-color;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+.button-section-four-steps{
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+#button-four-steps-link{
+    text-decoration: none;
+}

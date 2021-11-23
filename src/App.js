@@ -8,9 +8,7 @@ import './scss/sections/homeHeader.scss';
 import './scss/sections/homeOptions.scss';
 import './scss/sections/homeThreeColumns.scss';
 import './scss/sections/whoWeHelp.scss';
-
-
-
+import './scss/sections/login.scss';
 
 
 import {
@@ -20,7 +18,11 @@ import {
   Switch,
   NavLink,
 } from 'react-router-dom';
-import Home from './components/Home'
+import Home from './components/Home';
+import Login from './components/Login';
+import Register from './components/Register';
+
+
 
 
 class App extends Component {
@@ -28,10 +30,8 @@ class App extends Component {
     return <HashRouter>
              <Switch>
                <Route exact path='/' component={Home} />
-               
-               
-
-        
+               <Route exact path='/login' component={Login} />
+               <Route exact path='/register' component={Register} />
              </Switch>
            </HashRouter>;
   }

@@ -1,0 +1,41 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.login-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.login-area{
+    background-color: $background-gray;
+    width: 300px;
+    margin: auto;
+    padding: 30px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-buttons{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    margin-top: 20px;
+}
+
+.login-button{
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 0%;
+    border: 1.5px solid transparent;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.login-button:hover{
+    border: 1.5px solid $font-color;
+}

@@ -3,6 +3,12 @@
 
 #about-us-section{
     display: flex;
+
+}
+
+.about-us-img img{
+    width: 50vw;
+    height: 100%;
 }
 
 .about-us-text{
@@ -10,5 +16,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin: 0 30px;
+    width: 50vw;
+    background-color: $background-gray
+}
+
+.about-us-text img{
+    width: 10vw;
+    position: relative;
+    left: 70%
 }

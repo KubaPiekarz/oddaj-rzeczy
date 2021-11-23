@@ -9,15 +9,13 @@
     display: flex;
     padding: 30px 0;
     text-align: center;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
 }
 
 .column{
-    
     width: 20vw;
     h1{
         font-size: 60px;
-        font: normal normal 300 90px/122px Open Sans;
     }
 }

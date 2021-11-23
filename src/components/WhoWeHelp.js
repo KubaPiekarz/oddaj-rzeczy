@@ -1,48 +1,45 @@
 import React, {useState} from 'react';
+import asset from "../assets/Decoration.svg"
 
 const WhoWeHelp = () => {
     const [showText1, setShowText1] = useState(true);
     const [showText2, setShowText2] = useState(false);
     const [showText3, setShowText3] = useState(false);
 
-
     const onClick1 = () => {setShowText1(true); setShowText2(false); setShowText3(false);}
     const onClick2 = () => {setShowText1(false); setShowText2(true); setShowText3(false);}
     const onClick3 = () => {setShowText1(false); setShowText2(false); setShowText3(true);}
 
-    
     return (
         <>
         <section id="who-we-help-section">
             <div className="who-we-help-header">
                 <h1>Komu pomagamy?</h1>
-                <button id="button1" onClick={onClick1} >Fundacjom</button>
-                <button id="button2" onClick={onClick2} >Organizacjom pozarządowym</button>
-                <button id="button3" onClick={onClick3} >Lokalnym zbiórkom</button>
-                
+                <img className="img" src={asset}/>
             </div>
         </section>
-        <div>
+        <div className="who-we-help-buttons">
+            <button id="button" onClick={onClick1} >Fundacjom</button>
+            <button id="button" onClick={onClick2} >Organizacjom pozarządowym</button>
+            <button id="button" onClick={onClick3} >Lokalnym zbiórkom</button>
             {showText1 ? <Div1 /> :null}
             {showText2 ? <Div2 /> :null}
             {showText3 ? <Div3 /> :null}
         </div>
         </>
     )
-
-
 }
 
 const Div1 = () =>{
     return(
-        <section id="div-section-1">
-            <p>
+        <section id="div-section">
+            <p className="header-div">
                W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. 
                Możesz sprawdzić czym się zajmują, komu pomagają i
                czego potrzebują.
             </p>
             <div className="div-columns">
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Fundacja “Dbam o Zdrowie”</h3>
                         <p>Cel i misja: Pomoc osobom znajdującym się w trudnej sytuacji życiowej.</p>
@@ -51,7 +48,7 @@ const Div1 = () =>{
                         <p>ubrania, jedzenie, sprzęt AGD, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Fundacja “Dla dzieci”</h3>
                         <p>Cel i misja: Pomoc dzieciom z ubogich rodzin.</p>
@@ -60,7 +57,7 @@ const Div1 = () =>{
                         <p>ubrania, meble, zabawki</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Fundacja “Bez domu”</h3>
                         <p>Cel i misja: Pomoc dla osób nie posiadających miejsca zamieszkania..</p>
@@ -78,13 +75,13 @@ const Div1 = () =>{
 
 const Div2 = () =>{
     return(
-        <section id="div-section-2">
-            <p>
+        <section id="div-section">
+            <p className="header-div">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
             </p>
             <div className="div-columns">
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Organizacja “Lorem Ipsum 1”</h3>
                         <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
@@ -93,7 +90,7 @@ const Div2 = () =>{
                         <p>Egestas, sed, tempus</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Organizacja “Lorem Ipsum 2”</h3>
                         <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
@@ -102,7 +99,7 @@ const Div2 = () =>{
                         <p>Ut, aliquam, purus, sit, amet</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Organizacja “Lorem Ipsum 3”</h3>
                         <p>Scelerisque in dictum non consectetur a erat nam.</p>
@@ -118,13 +115,13 @@ const Div2 = () =>{
 
 const Div3 = () =>{
     return(
-        <section id="div-section-3">
-            <p>
+        <section id="div-section">
+            <p className="header-div">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
             </p>
             <div className="div-columns">
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Zbiórka “Lorem Ipsum 1”</h3>
                         <p>Quis varius quam quisque id diam vel quam elementum pulvinar.</p>
@@ -133,7 +130,7 @@ const Div3 = () =>{
                         <p>Egestas, sed, tempus</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Zbiórka “Lorem Ipsum 2”</h3>
                         <p>Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.</p>
@@ -142,7 +139,7 @@ const Div3 = () =>{
                         <p>Ut, aliquam, purus, sit, amet</p>
                     </div>
                 </div>
-                <div className="column">
+                <div className="column-who-we-help">
                     <div className="column-left">
                         <h3>Zbiórka “Lorem Ipsum 3”</h3>
                         <p>Scelerisque in dictum non consectetur a erat nam.</p>

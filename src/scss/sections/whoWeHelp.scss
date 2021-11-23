@@ -1,14 +1,47 @@
 @import '../settings/colors';
 @import '../settings/fonts';
 
-#who-we-help-section{
-    display:flex;
-    justify-content: center;
+
+.who-we-help-header{
+    text-align: center;
 }
 
-.message{
-    background-color: $green-color;
-    color: $white-color;
-    padding: 20px;
+.who-we-help-buttons{
+    text-align: center;
+}
+
+#button {
+    text-align: center;
+    width: 25vw;
+    height: 7vw;
+    border-radius: 0%;
+    border: 1.5px solid transparent;
+    background-color: transparent;
+    padding: 3vw 2vw;
+    font-size: 20px;
+}
+    
+#button:focus{
+    border: 1.5px solid $font-color;
+}
+  
+
+
+
+.header-div{
+    margin-left: auto;
+    margin-right: auto;
     width: 30vw;
 }
+
+.column-who-we-help{
+    display: flex;
+    width: 75vw;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid $background-gray;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
